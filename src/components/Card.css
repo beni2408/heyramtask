@@ -1,0 +1,83 @@
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(255, 140, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid var(--saffron-secondary);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(255, 140, 0, 0.2);
+  border-color: var(--saffron-primary);
+}
+
+.card-image {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--saffron-light), var(--saffron-secondary));
+  border-radius: 10px;
+}
+
+.card-emoji {
+  font-size: 4rem;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--saffron-text);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: var(--saffron-text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.card-quantity {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--saffron-primary);
+  text-align: center;
+  margin-bottom: 1rem;
+  background: var(--saffron-light);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--saffron-secondary);
+}
+
+.card-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--saffron-primary), var(--saffron-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-actions {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
+  
+  .card-emoji {
+    font-size: 3rem;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+  }
+}

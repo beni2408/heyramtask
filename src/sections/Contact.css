@@ -1,0 +1,122 @@
+.contact {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #FFFFFF 0%, var(--saffron-bg) 100%);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--saffron-primary), var(--saffron-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.office-hours {
+  background: linear-gradient(135deg, var(--saffron-light), var(--saffron-bg));
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid var(--saffron-secondary);
+}
+
+.office-hours h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--saffron-text);
+  margin-bottom: 1rem;
+}
+
+.hours {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--saffron-primary), var(--saffron-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(255, 140, 0, 0.1);
+  border: 1px solid var(--saffron-secondary);
+  transition: all 0.3s ease;
+}
+
+.contact-detail-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(255, 140, 0, 0.2);
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--saffron-primary), var(--saffron-accent));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--saffron-text);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+  
+  .office-hours {
+    padding: 2rem;
+  }
+  
+  .office-hours h3 {
+    font-size: 1.3rem;
+  }
+  
+  .hours {
+    font-size: 1.5rem;
+  }
+  
+  .contact-detail-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
