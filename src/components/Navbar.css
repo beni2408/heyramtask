@@ -121,6 +121,12 @@
   color: #333;
 }
 
+@media (max-width: 992px) {
+  .nav-container {
+    padding: 0 15px;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
@@ -154,5 +160,32 @@
   
   .nav-icon-link {
     justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-logo .logo-text {
+    font-size: 1.5rem;
+  }
+  
+  .nav-container {
+    height: 60px;
+    padding: 0 10px;
+  }
+  
+  .nav-menu {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-signup-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+  
+  .nav-icon-text {
+    font-size: 0.8rem;
   }
 }

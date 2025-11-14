@@ -60,6 +60,12 @@
   50% { transform: translateY(-10px); }
 }
 
+@media (max-width: 992px) {
+  .products-title {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .products-title {
     font-size: 2rem;
@@ -71,5 +77,31 @@
   
   .products-preview-icons {
     gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .products-title {
+    font-size: 1.8rem;
+  }
+  
+  .products-preview-text {
+    font-size: 1rem;
+  }
+  
+  .preview-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-preview-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .preview-icon {
+    font-size: 3rem;
   }
 }

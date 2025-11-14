@@ -52,7 +52,7 @@ const CartPage = () => {
     }
 
     const options = {
-      key: "rzp_test_1234567890",
+      key: import.meta.env.VITE_RAZORPAY_KEY,
       amount: total * 100,
       currency: "INR",
       name: "Z Princess Saffron",
